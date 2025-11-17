@@ -15,6 +15,11 @@ public class JobApplicantController {
 
     @Autowired
     private JobApplicantService service;
+    
+    @GetMapping("/")
+    public String home() {
+    	return "Welcome";
+    }
 
     // Add Applicant
     @PostMapping("/add")
